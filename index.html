@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Manager</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe Manager</h1>
+        
+        <!-- Recipe Form -->
+        <form class="recipe-form" id="recipeForm">
+            <h2>Add New Recipe</h2>
+            <div class="form-group">
+                <label>Recipe Name:</label>
+                <input type="text" id="recipeName" required>
+            </div>
+            <div class="form-group">
+                <label>Ingredients:</label>
+                <div id="ingredientsInput">
+                    <input type="text" id="ingredient" placeholder="Add ingredient">
+                    <button type="button" onclick="addIngredient()">Add Ingredient</button>
+                </div>
+                <ul class="ingredient-list" id="ingredientsList"></ul>
+            </div>
+            <div class="form-group">
+                <label>Instructions:</label>
+                <textarea id="instructions" rows="4" required></textarea>
+            </div>
+            <button type="submit">Save Recipe</button>
+        </form>
+
+        <!-- Recipe List -->
+        <div class="recipes-container" id="recipesContainer"></div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
