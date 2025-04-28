@@ -91,3 +91,33 @@ button:hover {
 .delete-btn:hover {
     background: #cc0000;
 }
+
+
+/* Category Filter */
+.category-filter {
+    margin-bottom: 20px;
+}
+
+.category-filter button {
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+/* Category Headers */
+.category-header {
+    grid-column: 1 / -1;
+    margin: 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4CAF50;
+    color: #333;
+}
+
+/* Category Badges */
+.category-badge {
+    background: #4CAF50;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    margin-left: 10px;
+}
